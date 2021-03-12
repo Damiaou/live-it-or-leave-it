@@ -12,6 +12,7 @@
 .text:nth-child(5n + 1) {
 	stroke: #f2385a;
 	animation-delay: -1.2s;
+	box-shadow: 5px 5px 5px #f2385a;
 }
 
 .text:nth-child(5n + 2) {
@@ -19,19 +20,19 @@
 	animation-delay: -2.4s;
 }
 
-.text:nth-child(5n + 4) {
+.text:nth-child(5n + 3) {
 	stroke: #039cf5;
 	animation-delay: -3.6s;
 }
 
 .text:nth-child(5n + 4) {
 	stroke: #f57803;
-	animation-delay: -6s;
+	animation-delay: -4.8s;
 }
 
 .text:nth-child(5n + 5) {
 	stroke: #8003f5;
-	animation-delay: -4.8s;
+	animation-delay: -6s;
 }
 
 @keyframes stroke {
@@ -49,7 +50,7 @@ body {
 body {
 	background: #111;
 	background-size: 0.2em 100%;
-	font: 10em/1 Open Sans, Impact;
+	font: 8em/1 Open Sans, Impact;
 	text-transform: uppercase;
 	margin: 0;
 }
