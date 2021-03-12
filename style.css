@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+	fill: none;
+	stroke-width: 6;
+	stroke-linejoin: round;
+	stroke-dasharray: 70 330;
+	stroke-dashoffset: 0;
+	animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+	stroke: #f2385a;
+	animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+	stroke: #38f276;
+	animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 4) {
+	stroke: #039cf5;
+	animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+	stroke: #f57803;
+	animation-delay: -6s;
+}
+
+.text:nth-child(5n + 5) {
+	stroke: #8003f5;
+	animation-delay: -4.8s;
+}
+
+@keyframes stroke {
+	100% {
+		stroke-dashoffset: -400;
+	}
+}
+
+/* Not animation */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #111;
+	background-size: 0.2em 100%;
+	font: 10em/1 Open Sans, Impact;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
